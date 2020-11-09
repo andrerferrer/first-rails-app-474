@@ -1,24 +1,15 @@
-# README
+## Usage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+First clone this repository. 
 
-Things you may want to cover:
+```bash
+export BATCH_NUMBER=474
+cd ~/code/$USER
+git clone git@github.com:andrerferrer/first-rails-app-$BATCH_NUMBER.git first-rails-app
+cd first-rails-app
+bundle install
+yarn install
+stt # Open this folder in Sublime Text
+rails s # run the server on localhost:3000
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

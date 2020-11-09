@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <div class="navbar" style='background-color: gray; height: 16px; width 100vw'>
+        <%# <a href="/" id="home">Home</a> %>
+        <%# link_to('TEXT', 'PATH') %>
+        <%# link_to('Home', '/') %>
+        <%# link_to 'Home', '/' %>
+        <%= link_to 'Home', root_path %>
+
+        <%# <a href="/contact" id="home">Contact</a> %>
+        <%= link_to 'Contact', contact_path %>
+        <%# <a href="/about" id="home">About</a> %>
+        <%= link_to 'About', about_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

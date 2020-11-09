@@ -1,0 +1,27 @@
+<%# Rule of Thumb %>
+<%# don't declare variables in the view, as Alfie correctly highlighted %>
+
+<% time = Time.now.strftime("%eth %b %Y") %>
+
+<h1>This is our contact page</h1>
+
+<form action="/contact" method="get">
+  <input type="text" 
+         name="member" 
+         value="<%= params[:member] %>"
+         placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<p>
+    Today is <%= time %>
+</p>
+
+<h2>Our team is composed of</h2>
+
+<ul>
+    <% @students.each do |student| %>
+       <li><%= student %></li>
+    <% end %>
+
+</ul>
